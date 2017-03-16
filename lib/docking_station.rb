@@ -1,7 +1,7 @@
 require_relative 'bike'
 
 class DockingStation
-  attr_reader :bikes, :capacity
+  attr_reader :capacity
 
 
   def initialize(capacity=20)
@@ -20,7 +20,16 @@ class DockingStation
     @bikes << bike
   end
 
+  def release_broken_bikes
+    bikes.select do |bike|
+      !bike.working?
+    end
+  end
+
   private
+
+  attr_reader :bikes
+
   def full?
     @bikes.count >= @capacity
   end
