@@ -16,4 +16,13 @@ class DockingStation
     raise "Dock station full." if @bikes.count >= 20
     @bikes << bike
   end
+
+  private
+  def full?
+    @bikes.count >= 20
+  end
+
+  def empty?
+    @bikes.empty?
+  end
 end
