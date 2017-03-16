@@ -1,8 +1,8 @@
 require 'van'
 
 describe Van do
-  # it 'receives an array of broken bikes' do
-  #   # expect(subject.crate).to eq DockingStation.new.release_broken_bikes
-  # end
+  it '#initialize receives an argument' do
+    expect {Van.new}.to raise_error(ArgumentError)
+  end
 
 end
