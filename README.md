@@ -29,8 +29,6 @@ I'd like to see if a bike is working
 ```
 
 Nouns in the User Stories
-* User
-* Customer
 * Person
 * Bike
 * Docking station
@@ -38,17 +36,15 @@ Nouns in the User Stories
 Verbs in the User Stories
 * Find the surname
 * Release a bike
-* Use a bike
 * Bike is working?
 
 | **Objects** | **Messages** |
 |-------------|---------------|
-| User            |                 |
-| Customer        | find_by_surname |
-| Person          | use_a_bike      |
+| Person          |       |
 | Bike            | working?        |
 | DockingStation  | release_bike    |
 
+Diagram of interactions
 ```
 Bike <-- working? --> true/false
 DockingStation <-- relsease_bike --> a Bike
