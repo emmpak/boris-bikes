@@ -11,12 +11,12 @@ Below are some of the concepts that we used to complete the project:
 * Test-Driven Development
 * Single Responsibility Principle
 
-Technologies used:
+### Technologies used:
 * Ruby
 * RSpec
 * Git / GitHub
 
-User Stories
+### User Stories
 ```
 As a person,
 So that I can use a bike,
@@ -28,12 +28,12 @@ So that I can use a good bike,
 I'd like to see if a bike is working
 ```
 
-Nouns in the User Stories
+###### Nouns in the User Stories
 * Person
 * Bike
 * Docking station
 
-Verbs in the User Stories
+###### Verbs in the User Stories
 * Find the surname
 * Release a bike
 * Bike is working?
@@ -44,7 +44,7 @@ Verbs in the User Stories
 | Bike            | working?        |
 | DockingStation  | release_bike    |
 
-Diagram of interactions
+###### Diagram of interactions
 ```
 Bike <-- working? --> true/false
 DockingStation <-- relsease_bike --> a Bike
